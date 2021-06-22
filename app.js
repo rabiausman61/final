@@ -10,7 +10,6 @@ var usersRouter = require('./routes/users');
 var productRouter = require('./routes/products');
 var session = require("express-session");
 var s=require('./middlewares/sessionAuth');
-
 var app = express();
 app.use(
   session({
@@ -55,4 +54,3 @@ mongoose.connect( "mongodb+srv://user1:rabia1999@productcrud.tjp9r.mongodb.net/m
   .catch((error) => console.log(error.message));
 module.exports = app;
 
-module.exports = app;

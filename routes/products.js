@@ -6,9 +6,10 @@ var check=require("../middlewares/checksessionauth");
 /* GET home page. */
 router.get('/', async function(req, res, next) {
   let products= await product.find();
-  console.log(req.session.user);
   res.render('products/list', {products});
 });
+
+
 
 
 

@@ -1,4 +1,4 @@
-extend ../layout
+extends ../layout
 block content 
     h1 products
     form(action="/products/add",method="post")
@@ -11,9 +11,7 @@ block content
         .form-group
             label(for="description") Description 
             input#des(type="text", class="form-control", name="description")
-        .form-group
-            label(for="rating") Rating 
-            input#rating(type="text", class="form-control", name="rating")
+        
       
         input(type="submit", class="btn btn-info")
 
